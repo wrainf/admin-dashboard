@@ -13,15 +13,28 @@ body{
     height: 100vh;
     display: grid;
     grid-template: 1fr 1fr 8fr/ 1fr 5fr;
+    background: linear-gradient(#22d3ee,#0e7490);
 }
 
-body > * {
-    border: 2px solid red;
-}
 .sidebar{
     grid-column: 1/2;
     grid-row: 1/4;
     padding: 20px;
+}
+
+.sidebar, .header, .nav{
+    color: #ecfeff;
+    font-weight: bold;
+}
+ 
+
+.sidebar,
+.card, .announcement-card, .suggestion-card{
+    box-shadow: 0px 0px 10px 0px #0369a1;
+}
+.card, .announcement-card, .suggestion-card{
+    border-radius: 20px;
+    background-color: #ecfeffce;
 }
 
 .header{
@@ -30,6 +43,10 @@ body > * {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav{
+    box-shadow: 8px 10px 10px -1 #0369a1;
 }
 
 textarea{
@@ -138,7 +155,6 @@ ul{
 }
 
 .card{
-    background-color: aliceblue;
     padding: 20px;
 }
 
@@ -151,8 +167,7 @@ ul{
 }
 
 .announcement-card{
-    padding: 10px;
-    background-color: aliceblue;
+    padding: 10px 12px;
 }
 
 h3,p{
@@ -160,15 +175,35 @@ h3,p{
     margin-bottom: 8px;
 }
 
+.posts > h3, .announcements > h3, .suggestions > h3{
+    color: #ecfeff;
+    margin-bottom: 16px;
+}
+
 .suggestion-card{
     display: flex;
     align-items: center;
     gap: 16px;
-    background-color: aliceblue;
     padding: 5px;
 }
 .suggestion-card img{
     width: 50px;
 }
+
+.sidebar .icon,.header .icon, .logo, .profile-pic{
+    filter: invert();
+}
+
+.menu-item:hover,
+.nav-actions:hover{
+    box-shadow: 0px 0px 10px 0px #0369a1;
+    background-color: #0369a1;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
 
 
