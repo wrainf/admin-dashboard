@@ -119,3 +119,56 @@ ul{
     align-items: center;
 }
 
+.content{
+    display: grid;
+    grid-template: 1fr/ 3fr 1fr;
+    padding: 10px 40px 20px 40px;
+    gap: 20px;
+}
+
+.posts{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.card{
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.announcement-container,
+.suggestion-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.announcement-card{
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+h3,p{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.suggestion-card{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+.suggestion-card img{
+    width: 50px;
+}
+
+
