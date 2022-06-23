@@ -1,1 +1,2 @@
 # admin-dashboard
+In this project I applied CSS grid concepts which I have recently learnt. There are many opinons online wheter flexbox or grid is better. It is also a little difficult to decide which is better for certain tasks. This projects helps me understand the functionality and uniqueness of each technology. Personally I find that as a rule of thumb, flexbox should be used for one dimensional layouts such as navigation bars and menus, while css grid should be use for 2d layouts such as posts and web page layouts for different sections. 
